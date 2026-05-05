@@ -1,1 +1,63 @@
-/*# sourceMappingURL=style.css.map */
+body {
+  background: #2c2c2c;
+  font-family: Arial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.stage {
+  display: none;
+  background: #ffffff;
+  padding: 30px;
+  width: 400px;
+  text-align: center;
+  border-radius: 10px;
+}
+.stage.active {
+  display: block;
+}
+.stage button {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px;
+  background: #f39c12;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+.stage button:hover {
+  opacity: 0.9;
+}
+
+.mail {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: left;
+  margin: 20px 0;
+  font-size: 14px;
+  width: 100%;
+  max-width: 100%;
+}
+.mail .mail-header {
+  background: #f1f1f1;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.mail .mail-header p {
+  margin: 5px 0;
+}
+.mail .mail-header .mail-body {
+  padding: 15px;
+}
+.mail .mail-header .mail-body .mail-link {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 10px;
+  background: red;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}/*# sourceMappingURL=style.css.map */
