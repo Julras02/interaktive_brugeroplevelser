@@ -1,18 +1,30 @@
 body {
-  background: #2c2c2c;
-  font-family: Arial;
+  background: #ffefba;
+  font-family: Arial, Helvetica, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  line-height: 1.5;
+}
+
+h2, h3 {
+  text-align: center;
+  color: #24009b;
+}
+
+h1 {
+  color: #f09400;
+  font-size: 45px;
+  text-align: center;
 }
 
 .stage {
   display: none;
   background: #ffffff;
   padding: 30px;
-  width: 400px;
-  text-align: center;
+  width: 500px;
+  text-align: start;
   border-radius: 10px;
 }
 .stage.active {
@@ -23,41 +35,49 @@ body {
   width: 100%;
   margin-top: 10px;
   padding: 12px;
-  background: #f39c12;
+  background: #f09400;
   border: none;
   color: white;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 .stage button:hover {
   opacity: 0.9;
 }
 
 .mail {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  text-align: left;
   margin: 20px 0;
-  font-size: 14px;
+  border: 3px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: left;
+  background: rgb(225, 225, 225);
+  font-size: 16px;
   width: 100%;
   max-width: 100%;
 }
-.mail .mail-header {
+
+p {
+  margin: 5px 0;
+}
+
+.mail-header {
   background: #f1f1f1;
   padding: 10px;
   border-bottom: 1px solid #ccc;
 }
-.mail .mail-header p {
-  margin: 5px 0;
-}
-.mail .mail-header .mail-body {
+
+.mail-body {
   padding: 15px;
+  background: #f1f1f1;
+  border-bottom: 1px solid #ccc;
 }
-.mail .mail-header .mail-body .mail-link {
+
+.mail-link {
   display: inline-block;
   margin: 10px 0;
   padding: 10px;
-  background: red;
+  background: rgb(255, 0, 0);
   color: white;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 6px;
 }/*# sourceMappingURL=style.css.map */
