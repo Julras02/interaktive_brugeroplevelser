@@ -31,7 +31,7 @@ const nextStage = (e) => {
             stages[2].classList.add("active");
         break;
 
-        case "Sletter mailen og går i stedet på borger.dk for at tjekke digital post":
+        case "Sletter mailen og går i stedet på borger.dk for at tjekke Digital Post":
             stages[1].classList.remove("active");
             stages[5].classList.add("active");
         break;
@@ -41,7 +41,7 @@ const nextStage = (e) => {
             stages[3].classList.add("active");
         break;
 
-        case "Sletter mailen og går til borger.dk for at tjekke digital post":
+        case "Sletter mailen og går til borger.dk for at tjekke Digital Post":
             stages[2].classList.remove("active");
             stages[4].classList.add("active");
         break;
