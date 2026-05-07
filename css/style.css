@@ -4,19 +4,20 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   line-height: 1.5;
-}
-
-h2, h3 {
-  text-align: center;
-  color: #24009b;
 }
 
 h1 {
   color: #f09400;
   font-size: 45px;
   text-align: center;
+}
+
+h2,
+h3 {
+  text-align: center;
+  color: #24009b;
 }
 
 .stage {
@@ -27,11 +28,11 @@ h1 {
   text-align: start;
   border-radius: 10px;
 }
-.stage p {
-  padding-bottom: 20px;
-}
 .stage.active {
   display: block;
+}
+.stage p {
+  padding-bottom: 20px;
 }
 .stage button {
   display: block;
@@ -42,6 +43,7 @@ h1 {
   border: none;
   color: white;
   border-radius: 15px;
+  cursor: pointer;
 }
 .stage button:hover {
   opacity: 0.9;
@@ -58,24 +60,20 @@ h1 {
   width: 100%;
   max-width: 100%;
 }
-
-p {
+.mail p {
   margin: 5px 0;
 }
-
-.mail-header {
+.mail .mail-header {
   background: #f1f1f1;
   padding: 10px;
   border-bottom: 1px solid #ccc;
 }
-
-.mail-body {
+.mail .mail-body {
   padding: 15px;
   background: #f1f1f1;
   border-bottom: 1px solid #ccc;
 }
-
-.mail-link {
+.mail .mail-link {
   display: inline-block;
   margin: 10px 0;
   padding: 10px;
@@ -84,16 +82,20 @@ p {
   text-decoration: none;
   border-radius: 6px;
 }
+.mail .mail-link:hover {
+  opacity: 0.9;
+}
 
 @media (max-width: 600px) {
-  .stage {
-    width: 90%;
+  body {
     padding: 20px;
+    height: auto;
   }
   h1 {
     font-size: 32px;
   }
-  body {
+  .stage {
+    width: 90%;
     padding: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
