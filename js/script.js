@@ -2,7 +2,7 @@ const btns = document.querySelectorAll(".stage .btn");
 const stages = document.querySelectorAll(".stage");
 const main = document.querySelector("main"); 
 
-//Måske skal denne her del med//
+
 const updateUI = (h2Text) => {
     const section = document.createElement("section");
     section.classList.add ("stage");
@@ -15,7 +15,7 @@ const updateUI = (h2Text) => {
     //Sæt ny section ind i main//
     main.replaceChildren ("section");
 }
-//Måske skal denne her del med//
+
 
 
 const nextStage = (e) => {
